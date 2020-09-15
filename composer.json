@@ -1,0 +1,43 @@
+{
+    "name": "daaner/laravel-intellectmoney",
+    "description": "IntellectMoney payments for Laravel 7+",
+    "keywords": [
+        "daaner",
+        "laravel payments",
+        "payments",
+        "intellectmoney",
+        "laravel intellectmoney"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daan",
+            "email": "daan@ukr.net"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "laravel/framework": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Daaner\\IntellectMoney\\Facades\\": "src/Facades",
+            "Daaner\\IntellectMoney\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Daaner\\IntellectMoney\\IntellectMoneyServiceProvider"
+            ],
+            "aliases": {
+                "NovaPoshta": "Daaner\\IntellectMoney\\Facades\\IntellectMoney"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
